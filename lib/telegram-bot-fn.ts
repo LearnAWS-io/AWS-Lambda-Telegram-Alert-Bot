@@ -21,11 +21,9 @@ export const handler = async (e: SNSEvent) => {
     .replaceAll("&", "&amp;");
 
   const text = `
-<b>${snsReq.Subject}</b>
+<b>${snsReq.Subject} - ${msg?.eventType}</b>
 
 ${errorMsg ? `Error: ${errorMsg}` : ""}
-
-Event type: ${msg?.eventType ?? "Unkwown"}
 
 <pre>
 <code class="language-yaml">
