@@ -28,9 +28,9 @@ ${errorMsg ? `Error: ${errorMsg}` : ""}
 Event type: ${msg?.eventType ?? "Unkwown"}
 
 <pre>
-  <code class="language-yaml">
-    ${yamlMsg}
-  </code>
+<code class="language-yaml">
+${yamlMsg}
+</code>
 </pre>
 `;
 
